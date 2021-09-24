@@ -1,0 +1,8 @@
+start:
+MOV A, 128
+MOV [A], 1
+.loop:
+ADD A, 1
+MOV [A], 1
+CMP A, 143
+JNZ .loop
